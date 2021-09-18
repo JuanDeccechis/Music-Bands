@@ -1,0 +1,46 @@
+ul {
+    padding: 0;
+}
+
+.nav { /*horizontal*/
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    position: -webkit-fixed;
+    top: calc(100% - 50px); /* required */
+    z-index: 1;
+    background-color: var(--background-color);
+    border-top: 3px solid var(--divider);
+    border-bottom: 3px solid var(--divider);
+}
+
+.nav li {
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.link.active {
+    color: var(--ok);
+    border-bottom: 3px solid var(--ok);
+}
+
+.nav-text {
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+
+.search-bar {
+    width: 252px;
+}
+
+@media screen and (min-width: 992px) {
+    .nav {
+        top: 0;
+    }
+}

@@ -1,0 +1,31 @@
+#root {
+  --theme-page-icon: #25ae88;
+  --divider: black;
+  --container: #3ac1ffcc;
+  --desktop-width: 992px;
+  --error: #c91a2c;
+  --disabled: #d8d8d8;
+  --font-size: 16;
+  --line-height: calc(16 * 1.5);
+  height: 100vh;
+}
+
+*{
+  margin: 0;
+}
+
+article.container {
+  height: calc(100% - 66px);
+  overflow-y : auto; /* show scrollbar only when need it*/
+  background-color: var(--background-color);
+  padding: 0 2%;
+  padding-top: 10px;
+  width: 96%;
+}
+
+@media screen and (min-width: 992px){
+  article {
+      position: absolute;
+      top: 56px;
+  }
+}
