@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Music-bands/static/css/main.88611ffb.chunk.css",
-    "main.js": "/Music-bands/static/js/main.f817330a.chunk.js",
-    "main.js.map": "/Music-bands/static/js/main.f817330a.chunk.js.map",
-    "runtime-main.js": "/Music-bands/static/js/runtime-main.fe96416c.js",
-    "runtime-main.js.map": "/Music-bands/static/js/runtime-main.fe96416c.js.map",
-    "static/js/2.79389d72.chunk.js": "/Music-bands/static/js/2.79389d72.chunk.js",
-    "static/js/2.79389d72.chunk.js.map": "/Music-bands/static/js/2.79389d72.chunk.js.map",
-    "static/js/3.06016eac.chunk.js": "/Music-bands/static/js/3.06016eac.chunk.js",
-    "static/js/3.06016eac.chunk.js.map": "/Music-bands/static/js/3.06016eac.chunk.js.map",
+    "main.js": "/Music-bands/static/js/main.f0ff23dc.chunk.js",
+    "main.js.map": "/Music-bands/static/js/main.f0ff23dc.chunk.js.map",
+    "runtime-main.js": "/Music-bands/static/js/runtime-main.338b8237.js",
+    "runtime-main.js.map": "/Music-bands/static/js/runtime-main.338b8237.js.map",
+    "static/js/2.daeb3244.chunk.js": "/Music-bands/static/js/2.daeb3244.chunk.js",
+    "static/js/2.daeb3244.chunk.js.map": "/Music-bands/static/js/2.daeb3244.chunk.js.map",
+    "static/js/3.d52a1343.chunk.js": "/Music-bands/static/js/3.d52a1343.chunk.js",
+    "static/js/3.d52a1343.chunk.js.map": "/Music-bands/static/js/3.d52a1343.chunk.js.map",
     "index.html": "/Music-bands/index.html",
     "static/css/main.88611ffb.chunk.css.map": "/Music-bands/static/css/main.88611ffb.chunk.css.map",
-    "static/js/2.79389d72.chunk.js.LICENSE.txt": "/Music-bands/static/js/2.79389d72.chunk.js.LICENSE.txt"
+    "static/js/2.daeb3244.chunk.js.LICENSE.txt": "/Music-bands/static/js/2.daeb3244.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fe96416c.js",
-    "static/js/2.79389d72.chunk.js",
+    "static/js/runtime-main.338b8237.js",
+    "static/js/2.daeb3244.chunk.js",
     "static/css/main.88611ffb.chunk.css",
-    "static/js/main.f817330a.chunk.js"
+    "static/js/main.f0ff23dc.chunk.js"
   ]
 }
