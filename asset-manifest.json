@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Music-Bands/static/css/main.261b2204.chunk.css",
-    "main.js": "/Music-Bands/static/js/main.fbf33563.chunk.js",
-    "main.js.map": "/Music-Bands/static/js/main.fbf33563.chunk.js.map",
-    "runtime-main.js": "/Music-Bands/static/js/runtime-main.90d78b85.js",
-    "runtime-main.js.map": "/Music-Bands/static/js/runtime-main.90d78b85.js.map",
-    "static/js/2.1ad37f7b.chunk.js": "/Music-Bands/static/js/2.1ad37f7b.chunk.js",
-    "static/js/2.1ad37f7b.chunk.js.map": "/Music-Bands/static/js/2.1ad37f7b.chunk.js.map",
-    "static/js/3.99a12eb3.chunk.js": "/Music-Bands/static/js/3.99a12eb3.chunk.js",
-    "static/js/3.99a12eb3.chunk.js.map": "/Music-Bands/static/js/3.99a12eb3.chunk.js.map",
+    "main.js": "/Music-Bands/static/js/main.1a3505db.chunk.js",
+    "main.js.map": "/Music-Bands/static/js/main.1a3505db.chunk.js.map",
+    "runtime-main.js": "/Music-Bands/static/js/runtime-main.01e9f565.js",
+    "runtime-main.js.map": "/Music-Bands/static/js/runtime-main.01e9f565.js.map",
+    "static/js/2.fdf4baf9.chunk.js": "/Music-Bands/static/js/2.fdf4baf9.chunk.js",
+    "static/js/2.fdf4baf9.chunk.js.map": "/Music-Bands/static/js/2.fdf4baf9.chunk.js.map",
+    "static/js/3.bd794208.chunk.js": "/Music-Bands/static/js/3.bd794208.chunk.js",
+    "static/js/3.bd794208.chunk.js.map": "/Music-Bands/static/js/3.bd794208.chunk.js.map",
     "index.html": "/Music-Bands/index.html",
     "static/css/main.261b2204.chunk.css.map": "/Music-Bands/static/css/main.261b2204.chunk.css.map",
-    "static/js/2.1ad37f7b.chunk.js.LICENSE.txt": "/Music-Bands/static/js/2.1ad37f7b.chunk.js.LICENSE.txt"
+    "static/js/2.fdf4baf9.chunk.js.LICENSE.txt": "/Music-Bands/static/js/2.fdf4baf9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.90d78b85.js",
-    "static/js/2.1ad37f7b.chunk.js",
+    "static/js/runtime-main.01e9f565.js",
+    "static/js/2.fdf4baf9.chunk.js",
     "static/css/main.261b2204.chunk.css",
-    "static/js/main.fbf33563.chunk.js"
+    "static/js/main.1a3505db.chunk.js"
   ]
 }
