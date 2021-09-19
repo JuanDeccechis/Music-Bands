@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Nav from "../components/nav/Nav";
 import HomePage from "./HomePage";
+import LoginPage from "./LoginPage";
+import AccountPage from "./AccountPage";
+import RegisterPage from "./RegisterPage";
 
 class Router extends Component {
   constructor(props) {
@@ -9,6 +12,7 @@ class Router extends Component {
     this.state = {
       width: window.innerWidth,
       isLogged: false,
+      username: ''
     };
     this.handleResize = this.handleResize.bind(this);
   }
@@ -21,9 +25,11 @@ class Router extends Component {
     window.addEventListener("resize", this.handleResize);
   }
 
-  handleLoggin = () => {
-    localStorage.setItem("isLogged", "true");
-    this.setState({ isLogged : true });
+  toggleLogin = (username) => {
+    const { isLogged } = this.state;
+    localStorage.setItem("isLogged", !isLogged);
+    localStorage.setItem("username", username);
+    this.setState({ isLogged : !isLogged, username: username });
   }
 
   componentWillUnmount() {
@@ -36,9 +42,18 @@ class Router extends Component {
       <div className="router">
         <BrowserRouter basename="/Music-bands">
           <Nav isMobile={width >= 992 ? false : true} isLogged={isLogged}/>
-          <Switch>
-            <Route exact path="/" component={HomePage}></Route>
-          </Switch>
+          {!isLogged ?
+            <Switch>
+              <Route exact path="/register" component={(props) => <RegisterPage {...props} handleLogin={this.toggleLogin} />}></Route>
+              <Route path="/" component={(props) => <LoginPage {...props} handleLogin={this.toggleLogin} />}></Route>
+              {/*<Route path="/login/recoveryPassword" component={(props) => <LoginPage {...props} />}></Route>*/}
+            </Switch>
+            :  
+            <Switch>
+              <Route exact path="/" component={HomePage}></Route>
+              <Route path="/account" component={(props) => <AccountPage {...props} handleLogout={this.toggleLogin} />}></Route>
+            </Switch>
+          }
         </BrowserRouter>
       </div>
     );

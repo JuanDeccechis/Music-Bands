@@ -1,6 +1,6 @@
 {
-  "homepage": "http://juandeccechis@github.io/Music-bands",
-  "name": "tp1-react",
+  "name": "music-bands",
+  "homepage": "http://juandeccechis@github.io/Music-Bands",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
