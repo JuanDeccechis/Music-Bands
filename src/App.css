@@ -23,9 +23,21 @@ article.container {
   width: 96%;
 }
 
+.loader{
+  height: calc(100% - 66px);
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 992px){
   article {
       position: absolute;
       top: 56px;
   }
+  .loader {
+    position: absolute;
+    top: 56px;
+}
 }
