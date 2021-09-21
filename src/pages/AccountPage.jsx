@@ -25,7 +25,7 @@ class AccountPage extends Component {
     return <article className="container">
         <h1>Hi {localStorage.getItem('username')}</h1>
         <div className="espaciado">
-            <Button className="principal" handleClick={this.handleSubmit} text="Close" />
+            <Button className="principal" handleClick={this.handleSubmit} text="Logout" />
         </div>
 
     </article>;

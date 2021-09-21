@@ -26,12 +26,12 @@ ul {
 }
 
 .link{
-    color: var(--icon-color);
+    color: var(--container);
 }
 
 .link.active {
-    color: var(--container);
-    border-bottom: 3px solid var(--container);
+    color: var(--icon-color);
+    border-bottom: 3px solid var(--icon-color);
 }
 
 .nav-text {

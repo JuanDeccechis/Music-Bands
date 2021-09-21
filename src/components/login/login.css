@@ -1,13 +1,3 @@
-/*.input-icons svg.with-focus {
-    left: 16px; /** lo corro 16 px del padding por el fieldset y lo bajo 8 px porque el focus varia el alto 16px
-    top: calc(50% - 4px);
-}
-
-.input-icons svg.with-focus-after {
-    right: -24px;
-    top: calc(50% - 4px);
-}*/
-
 .input-icons svg.with-error {
     top: calc(
       50% - 23px
@@ -110,7 +100,7 @@
   .login-form {
     width: calc(100% - 20px);
     padding: 10px; /*mayor padding para container*/
-    background-color: var(--container);
+    background-color: var(--icon-color);
     border-radius: 30px; /*mayor border-radius para container*/
     /*background: linear-gradient(#3f87a6, #ebf8e1, #f69d3c, #561423);*/
     margin: auto;
@@ -125,7 +115,7 @@
   .checkbox-container {
     position: relative;
     height: 26px;
-    width: 130px;
+    width: 150px;
     cursor: pointer;
   }
   
@@ -148,6 +138,10 @@
   
   .separacion {
     height: 24px;
+  }
+
+  .form-link{
+      color: var(--primary-color);
   }
   
   @media screen and (min-width: 992px) {

@@ -85,7 +85,7 @@ class Login extends Component {
         </div>
         <div className="login-register-container espaciado">
           <div>
-            <NavLink to="/login" activeClassName="">
+            <NavLink to="/login" className="form-link" activeClassName="">
             <span>I have an account</span>
           </NavLink>
           </div>

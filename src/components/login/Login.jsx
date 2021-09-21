@@ -101,7 +101,7 @@ class Login extends Component {
         <div>
         <NavLink
           to="/login/recoveryPassword"
-          className="forgot-password"
+          className="forgot-password form-link"
           activeClassName=""
         >
           <span>Forgot Password</span>
@@ -114,7 +114,7 @@ class Login extends Component {
         <div className="login-register-container espaciado">
           <div>
             <span>I haven't accounts </span>
-            <NavLink to="/register" activeClassName="">
+            <NavLink to="/register" className="form-link" activeClassName="">
               <span>Register</span>
             </NavLink>
           </div>
