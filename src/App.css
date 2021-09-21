@@ -14,6 +14,16 @@
   margin: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+  text-align: center;
+}
+
 article.container {
   height: calc(100% - 66px);
   overflow-y : auto; /* show scrollbar only when need it*/
@@ -31,6 +41,10 @@ article.container {
   align-items: center;
 }
 
+.columns{
+  display: block;
+}
+
 @media screen and (min-width: 992px){
   article {
       position: absolute;
@@ -39,5 +53,10 @@ article.container {
   .loader {
     position: absolute;
     top: 56px;
-}
+  }
+  .columns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

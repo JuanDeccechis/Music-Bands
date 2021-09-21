@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom'
 import { NavLink } from "react-router-dom";
 import Input from "../input/Input";
 import Button from "../button/Button";

@@ -15,8 +15,6 @@ class Login extends Component {
     super(props);
     this.state = {
       visibilityPassword: false,
-      firstTry: true,
-      remember: false,
     };
     this.handleChangeVisibilityPassword =
       this.handleChangeVisibilityPassword.bind(this);
@@ -41,7 +39,6 @@ class Login extends Component {
     event.preventDefault();
     event.stopPropagation();
     }
-    this.setState({ firstTry: false });
   }
 
   changePath() {
@@ -51,7 +48,7 @@ class Login extends Component {
   }
 
   render() {
-    const { visibilityPassword, remember } = this.state;
+    const { visibilityPassword } = this.state;
     return (
       <form
         action=""

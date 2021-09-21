@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Loader from "react-loader-spinner";
+import Filter from "../components/filter/Filter";
+import Album from "../components/album/Album";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 class HomePage extends Component {
@@ -9,14 +11,21 @@ class HomePage extends Component {
         bands: null,
         albums: null, 
         genre: null,
+        genreSelected: null,
+        bandSelected: null,
     }
+    this.handleGenreSelected = this.handleGenreSelected.bind(this);
+    this.handleBandSelected = this.handleBandSelected.bind(this);
   }
 
   componentDidMount() {
-    this.getDataFromApi("bands");
-    this.getDataFromApi("albums");
-    this.getDataFromApi("genre");
-   // window.setTimeout(() => { this.setState({ loaded: true}) }, 5000);
+      const { bands, albums, genre } = this.state; //this will be uploaded by reducer / sagas / api, when the user was authenticated
+      if (!genre)
+        this.getDataFromApi("genre");
+      if (!bands)
+        this.getDataFromApi("bands");
+      if (!albums)
+        this.getDataFromApi("albums");
     
   }
 
@@ -31,9 +40,28 @@ class HomePage extends Component {
             })
   }
 
+  handleGenreSelected(genre) {
+    const { genreSelected } = this.state;
+    if (!genreSelected || !genre || genre.code !== genreSelected.code){
+        this.setState({ genreSelected: genre, bandSelected: null });
+    }
+  }
+
+  handleBandSelected(band) {
+    this.setState({ bandSelected: band })
+  }
+
   render() {
-    const { bands, albums, genre } = this.state;
+    const { bands, albums, genre, genreSelected, bandSelected } = this.state;
     let loaded = bands && albums && genre;
+    let genreBands = bands;
+    let bandAlbums = null;
+    if (genreSelected && bands) {
+        genreBands = bands.filter(band => band.genreCode === genreSelected.code);
+    }
+    if (bandSelected && albums) {
+        bandAlbums = albums.filter(album => album.bandId === bandSelected.id);
+    }
     if (!loaded) {
         return <Loader
                 type="TailSpin"
@@ -44,38 +72,62 @@ class HomePage extends Component {
               />
     } else {
 
-    return <article className="container">
-        <p className="example-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sed provident cupiditate vitae commodi quae, earum autem quaerat! Praesentium quis distinctio incidunt fugit, facilis odio illo quam error culpa nemo!
-        </p>
+      return <article className="container">
+        <h1 className="example-text">
+            Here you can find albums and bands that we have, sorted and filtered
+        </h1>
+        
+        {genre && 
+            <div className="espaciado">
+                <Filter list={genre} handleClick={this.handleGenreSelected} selected={genreSelected} />
+            </div>
+            /*{gen.code} , {gen.name}*/
+        }
         <div className="espaciado">
             <div className="results">
                 {bands && 
-                    <ul>
-                        {bands.map((band, index) => 
-                            <li key={index}> {band.id} , {band.name} , {band.genreCode}, {band.year}, {band.country}, </li>
-                        )}
-                    </ul>
+                    <div>
+                        <h2>Bands</h2>
+                        <ul>
+                            {genreBands.map((band, index) => 
+                                <li key={index} onClick={() => this.handleBandSelected(band)}> {band.id} , {band.name} , {band.year}, {band.country}, </li>
+                            )}
+                        </ul>
+                    </div>
                 }
             </div>
         </div>
+        {bandSelected && 
+            <div className="columns">
+                <div className="espaciado">
+                    <h2>{bandSelected.name} members</h2>
+                    <ul>
+                        {bandSelected.members.map((member, index) => 
+                            <li key={index}> {member.name} </li>
+                        )}
+                    </ul>
+                </div>
+                {bandAlbums &&
+                    <div className="espaciado">
+                        <h2>Albums created by {bandSelected.name}</h2>
+                        <ul>
+                            {bandAlbums.map((album, index) => 
+                                <li key={index}> <Album album={album}></Album> </li>
+                            )}
+                        </ul>
+                    </div>
+                }
+            </div>
+        }
         <div className="espaciado">
             <div className="results">
                 {albums && 
                     <ul>
+                        <h2>Albums</h2>
                         {albums.map((album, index) => 
-                            <li key={index}> {album.id} , {album.bandId}, {album.name} , {album.year}</li>
-                        )}
-                    </ul>
-                }
-            </div>
-        </div>
-        <div className="espaciado">
-            <div className="results">
-                {genre && 
-                    <ul>
-                        {genre.map((gen, index) => 
-                            <li key={index}> {gen.code} , {gen.name}</li>
+                            <li key={index}>
+                                <Album album={album}></Album>
+                            </li>
                         )}
                     </ul>
                 }
