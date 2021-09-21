@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Music-Bands/static/css/main.e830c6ec.chunk.css",
-    "main.js": "/Music-Bands/static/js/main.582f6930.chunk.js",
-    "main.js.map": "/Music-Bands/static/js/main.582f6930.chunk.js.map",
-    "runtime-main.js": "/Music-Bands/static/js/runtime-main.0a4951a4.js",
-    "runtime-main.js.map": "/Music-Bands/static/js/runtime-main.0a4951a4.js.map",
+    "main.css": "/Music-Bands/static/css/main.1735ea63.chunk.css",
+    "main.js": "/Music-Bands/static/js/main.3bed2b20.chunk.js",
+    "main.js.map": "/Music-Bands/static/js/main.3bed2b20.chunk.js.map",
+    "runtime-main.js": "/Music-Bands/static/js/runtime-main.3b2c9ac8.js",
+    "runtime-main.js.map": "/Music-Bands/static/js/runtime-main.3b2c9ac8.js.map",
     "static/css/2.ab75b8d7.chunk.css": "/Music-Bands/static/css/2.ab75b8d7.chunk.css",
-    "static/js/2.269ac30d.chunk.js": "/Music-Bands/static/js/2.269ac30d.chunk.js",
-    "static/js/2.269ac30d.chunk.js.map": "/Music-Bands/static/js/2.269ac30d.chunk.js.map",
-    "static/js/3.fc6ef734.chunk.js": "/Music-Bands/static/js/3.fc6ef734.chunk.js",
-    "static/js/3.fc6ef734.chunk.js.map": "/Music-Bands/static/js/3.fc6ef734.chunk.js.map",
+    "static/js/2.945e7b1c.chunk.js": "/Music-Bands/static/js/2.945e7b1c.chunk.js",
+    "static/js/2.945e7b1c.chunk.js.map": "/Music-Bands/static/js/2.945e7b1c.chunk.js.map",
+    "static/js/3.95226ec8.chunk.js": "/Music-Bands/static/js/3.95226ec8.chunk.js",
+    "static/js/3.95226ec8.chunk.js.map": "/Music-Bands/static/js/3.95226ec8.chunk.js.map",
     "index.html": "/Music-Bands/index.html",
     "static/css/2.ab75b8d7.chunk.css.map": "/Music-Bands/static/css/2.ab75b8d7.chunk.css.map",
-    "static/css/main.e830c6ec.chunk.css.map": "/Music-Bands/static/css/main.e830c6ec.chunk.css.map",
-    "static/js/2.269ac30d.chunk.js.LICENSE.txt": "/Music-Bands/static/js/2.269ac30d.chunk.js.LICENSE.txt"
+    "static/css/main.1735ea63.chunk.css.map": "/Music-Bands/static/css/main.1735ea63.chunk.css.map",
+    "static/js/2.945e7b1c.chunk.js.LICENSE.txt": "/Music-Bands/static/js/2.945e7b1c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0a4951a4.js",
+    "static/js/runtime-main.3b2c9ac8.js",
     "static/css/2.ab75b8d7.chunk.css",
-    "static/js/2.269ac30d.chunk.js",
-    "static/css/main.e830c6ec.chunk.css",
-    "static/js/main.582f6930.chunk.js"
+    "static/js/2.945e7b1c.chunk.js",
+    "static/css/main.1735ea63.chunk.css",
+    "static/js/main.3bed2b20.chunk.js"
   ]
 }
