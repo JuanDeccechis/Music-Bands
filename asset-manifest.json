@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Music-Bands/static/css/main.fef5e16a.chunk.css",
-    "main.js": "/Music-Bands/static/js/main.2740afe7.chunk.js",
-    "main.js.map": "/Music-Bands/static/js/main.2740afe7.chunk.js.map",
+    "main.css": "/Music-Bands/static/css/main.c65d0692.chunk.css",
+    "main.js": "/Music-Bands/static/js/main.da56fed9.chunk.js",
+    "main.js.map": "/Music-Bands/static/js/main.da56fed9.chunk.js.map",
     "runtime-main.js": "/Music-Bands/static/js/runtime-main.c5f5121a.js",
     "runtime-main.js.map": "/Music-Bands/static/js/runtime-main.c5f5121a.js.map",
     "static/css/2.ab75b8d7.chunk.css": "/Music-Bands/static/css/2.ab75b8d7.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.62fef172.chunk.js.map": "/Music-Bands/static/js/3.62fef172.chunk.js.map",
     "index.html": "/Music-Bands/index.html",
     "static/css/2.ab75b8d7.chunk.css.map": "/Music-Bands/static/css/2.ab75b8d7.chunk.css.map",
-    "static/css/main.fef5e16a.chunk.css.map": "/Music-Bands/static/css/main.fef5e16a.chunk.css.map",
+    "static/css/main.c65d0692.chunk.css.map": "/Music-Bands/static/css/main.c65d0692.chunk.css.map",
     "static/js/2.f31d5621.chunk.js.LICENSE.txt": "/Music-Bands/static/js/2.f31d5621.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c5f5121a.js",
     "static/css/2.ab75b8d7.chunk.css",
     "static/js/2.f31d5621.chunk.js",
-    "static/css/main.fef5e16a.chunk.css",
-    "static/js/main.2740afe7.chunk.js"
+    "static/css/main.c65d0692.chunk.css",
+    "static/js/main.da56fed9.chunk.js"
   ]
 }
