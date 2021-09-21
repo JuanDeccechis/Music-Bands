@@ -15,7 +15,7 @@ class Filter extends Component {
             <div className="tabs">
                 <ul>
                     <li className="tab-li-item" onClick={() => this.props.handleClick(null)}> 
-                        <div className={`tab-item ${!selected ? 'selected' : ''}`}>
+                        <div className={`tab-item special ${!selected ? 'selected' : ''}`}>
                             All genres</div>
                     </li>
                     { list && list.map((item, index) => 

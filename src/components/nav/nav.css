@@ -9,7 +9,7 @@ ul {
     justify-content: center;
     position: fixed;
     position: -webkit-fixed;
-    top: calc(100% - 50px); /* required */
+    top: calc(100% - 56px); /* required */
     z-index: 1;
     background-color: var(--background-color);
     border-top: 3px solid var(--divider);
@@ -25,9 +25,13 @@ ul {
     align-items: center;
 }
 
+.link{
+    color: var(--icon-color);
+}
+
 .link.active {
-    color: var(--ok);
-    border-bottom: 3px solid var(--ok);
+    color: var(--container);
+    border-bottom: 3px solid var(--container);
 }
 
 .nav-text {

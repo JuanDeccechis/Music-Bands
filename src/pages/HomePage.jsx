@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Loader from "react-loader-spinner";
 import Filter from "../components/filter/Filter";
 import Album from "../components/album/Album";
+import Row from "../components/row/Row";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 class HomePage extends Component {
@@ -65,17 +66,17 @@ class HomePage extends Component {
     if (!loaded) {
         return <Loader
                 type="TailSpin"
-                color="#00BFFF"
+                color="#2020bf"
                 height={100}
                 width={100}
                 className="loader"
               />
     } else {
-
       return <article className="container">
-        <h1 className="example-text">
-            Here you can find albums and bands that we have, sorted and filtered
-        </h1>
+          <h1>Music Bands</h1>
+          <div className="espaciado">
+            <h2>Here you can find albums and bands that we have, sorted and filtered</h2>
+          </div>
         
         {genre && 
             <div className="espaciado">
@@ -88,11 +89,16 @@ class HomePage extends Component {
                 {bands && 
                     <div>
                         <h2>Bands</h2>
-                        <ul>
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Country</th>
+                                <th>Year</th>
+                            </tr>
                             {genreBands.map((band, index) => 
-                                <li key={index} onClick={() => this.handleBandSelected(band)}> {band.id} , {band.name} , {band.year}, {band.country}, </li>
+                                <Row key={index} onClick={() => this.handleBandSelected(band)} content={band} selected={bandSelected && band.id === bandSelected.id} />
                             )}
-                        </ul>
+                        </table>
                     </div>
                 }
             </div>
@@ -100,14 +106,14 @@ class HomePage extends Component {
         {bandSelected && 
             <div className="columns">
                 <div className="espaciado">
-                    <h2>{bandSelected.name} members</h2>
+                    <h2>Members of{bandSelected.name}</h2>
                     <ul>
                         {bandSelected.members.map((member, index) => 
                             <li key={index}> {member.name} </li>
                         )}
                     </ul>
                 </div>
-                {bandAlbums &&
+                {bandAlbums && bandAlbums.length > 0 &&
                     <div className="espaciado">
                         <h2>Albums created by {bandSelected.name}</h2>
                         <ul>
